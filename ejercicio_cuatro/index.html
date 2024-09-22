@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fecha</title>
+    <link rel="stylesheet" href="CSS/stylePOO.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Simulación de Fecha</h1>
+        <p id="fechaActual">Fecha actual: 01-01-2000</p>
+
+        <h2>Leer nueva fecha</h2>
+        <label for="dia">Día:</label>
+        <input type="number" id="dia" min="1" max="31" value="1"><br><br>
+        <label for="mes">Mes:</label>
+        <input type="number" id="mes" min="1" max="12" value="1"><br><br>
+        <label for="año">Año:</label>
+        <input type="number" id="año" min="2000" max="2024" value="2000"><br><br>
+        <button id="leerFecha">Leer fecha</button>
+        <br><br>
+
+        <h2>Consultas</h2>
+        <button id="bisiesto">¿Es bisiesto?</button><br><br>
+
+        <label for="mesConsulta">Consultar días del mes (1 a 12):</label>
+        <input type="number" id="mesConsulta" min="1" max="12" value="1">
+        <button id="diasMes">Consultar días del mes</button><br><br>
+
+        <button id="diasTranscurridos">Días transcurridos desde 01-01-2000</button>
+        <br><br>
+
+        <h2>Modificar fecha</h2>
+        <button id="siguiente">Día siguiente</button>
+        <button id="anterior">Día anterior</button>
+    </div>
+
+    <script src="JS/index.js"></script>
+</body>
+</html>

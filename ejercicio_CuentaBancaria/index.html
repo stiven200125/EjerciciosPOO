@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/stylePOO.css"> 
+    <title>Cajero: Mi Moneda</title>
+</head>
+<body>
+    <div class="container">
+        <div class="info-main">
+            <h1>POO 2: Cajero Mi Moneda</h1>
+
+            <div>
+                <label>Saldo Actual: $</label>
+                <input id="saldo" disabled>
+            </div>
+
+            <div class="valores">
+                <div>
+                    <div><button onclick="acumular(100)">100</button></div>
+                    <div><button onclick="acumular(200)">200</button></div>
+                    <div><button onclick="acumular(300)">300</button></div>
+                </div>
+                <div>
+                    <div><button onclick="acumular(400)">400</button></div>
+                    <div><button onclick="acumular(500)">500</button></div>
+                    <div><button onclick="acumular(600)">600</button></div>
+                </div>
+                <div>
+                    <div><button onclick="acumular(700)">700</button></div>
+                    <div><button onclick="acumular(800)">800</button></div>
+                    <div><button onclick="acumular(900)">900</button></div>
+                </div>
+            </div>
+
+            <div>
+                <label>$</label>
+                <input name="" id="inputCantidad" disabled>
+            </div>
+
+            <div class="opciones">
+                <div>
+                    <button class="transaccion" onclick="transaccionRetirar()" id="retirar">Retirar</button>
+                </div>
+                <div>
+                    <button id="consignar">Consignar</button>
+                </div>
+            </div>  
+
+            <input id="inputSalida" disabled>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="JS/index.js"></script>
+    
+</body>
+</html>
